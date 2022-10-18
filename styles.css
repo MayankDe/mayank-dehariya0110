@@ -1,0 +1,183 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  
+ background-color: rgba(12, 12, 12, 0.868);
+ 
+ height: fit-content;
+    position: relative;  
+}
+.marg{
+  margin-top: 100px;
+}
+.box1{
+    height: 100vh;
+}
+
+
+
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body1{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    transform-style: preserve-3d;
+}
+
+.container .box{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.container .box .body1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.9s ease;
+}
+
+
+
+.container .box .body1 .imgContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    transform-style: preserve-3d;
+}
+
+.container .box .body1 .imgContainer img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box .body1 .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #333;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.container .box:hover .body1{
+    transform: rotateY(180deg);
+}
+
+.container .box .body1 .content div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    /* background:conic-gradient( rgba(135, 133, 133, 0.644) 10%, rgba(137, 133, 104, 0.653) 20%,rgba(97, 156, 69, 0.269)30%,rgba(118, 237, 201, 0.489)40%,rgba(12, 32, 132, 0.489)50%,rgba(97, 39, 232, 0.553)60%,rgba(72, 14, 116, 0.475)70%,rgba(120, 65, 143, 0.429)80%,rgba(107, 28, 90, 0.598)90%,rgba(64, 16, 127, 0.475)100%); */
+    background: linear-gradient(45deg, #27e8053b,#0407062d,rgba(2, 4, 11, 0.865));
+    /* background:linear-gradient( rgba(5, 5, 12, 0.938) 20%,rgba(209, 209, 236, 0.938) 60%, rgba(59, 6, 42, 0.806)100%); */
+    transform: translateZ(100px);
+}
+
+.container .box .body1 .content div h3{
+    letter-spacing: 1px;
+}
+#footer-container{
+  position: absolute;
+
+  width: 100%;
+  background-color: rgb(48, 35, 35);
+  /* background-color: rgb(50, 53, 77); */
+  color: white;
+  text-align: center;
+}
+span {
+ 
+  color: bisque;
+  font-size: 200%;
+
+
+}
+
+
+.quoto{
+  text-transform: uppercase;
+}
